@@ -1,0 +1,45 @@
+/* Scss Document */
+
+nav {
+	
+	width: 100%;
+	
+	ul {
+		padding: 0;
+    	list-style-type: none;
+
+	}
+	
+	li {
+		
+		a {
+			float: left;
+			min-width: 100px;
+			color: $pinkie-pie;
+			background-color: $super-green;
+			
+			text-align: center;
+			text-decoration: none;
+				
+			font-family: $secondary-font-stack;
+			font-style: italic;
+			font-weight: bolder;
+			
+			padding: $button-padding;
+			border: $button-border;
+			@include border-radius($button-border-radius);
+			
+			&:hover, &.active {
+				color: $super-green;
+				background-color: $pinkie-pie;
+				font-size: 8px;
+				font-style: normal;
+				font-weight: 100;
+			}
+			
+			
+		}
+		
+	}
+	
+}
